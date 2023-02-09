@@ -1,0 +1,8 @@
+用dnspy打開Assembly-CSharp.dll
+在Heluo.Data裡面找到GameDataHepler
+edit the "public static byte[] SaveFile(GameData data, IKernel kernel)" method
+//remove this line -> if (GameConfig.SaveDataVersion == "TitleSave")
+改完之後存檔.
+File -> Save Module
+
+然後存檔就都是明文了
